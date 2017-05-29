@@ -12,6 +12,7 @@ app.use(cache('1 minute'));
 app.use(cors());
 
 app.get('/scoreboard', (req, res) => {
+  console.log('request received');
   const { date } = req.query;
   fetchGames(date).then(games => res.send(games));
 });
