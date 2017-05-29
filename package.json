@@ -2,11 +2,12 @@
   "name": "nba-stats-wrapper",
   "version": "1.0.0",
   "description": "wrapper for nba stats api",
-  "main": "index.js",
+  "main": "./bundle/server-bundle.js",
   "scripts": {
     "dev": "webpack --config ./webpack.config.js -d --watch",
-    "build": "webpack --config ./webpack.config.js -p",
-    "server": "nodemon ./bundle/server-bundle.js"
+    "build": "webpack --config ./webpack.config.js -p --optimize-minimize",
+    "start:hot": "nodemon ./bundle/server-bundle.js",
+    "start": "./bundle/server-bundle.js"
   },
   "keywords": [
     "nba"
@@ -15,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "apicache": "^0.8.4",
+    "cors": "^2.8.3",
     "express": "^4.15.2",
     "nba": "^3.2.6",
     "prop-types": "^15.5.8"
