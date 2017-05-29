@@ -16,4 +16,8 @@ app.get('/scoreboard', (req, res) => {
   fetchGames(date).then(games => res.send(games));
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to nba-stats-backend!');
+});
+
 app.listen(80, () => console.log('running on port 80'));
