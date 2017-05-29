@@ -16,4 +16,4 @@ app.get('/scoreboard', (req, res) => {
   fetchGames(date).then(games => res.send(games));
 });
 
-app.listen(8080, () => console.log('running on port 8080'));
+app.listen(80, () => console.log('running on port 80'));
