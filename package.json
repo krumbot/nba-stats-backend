@@ -1,0 +1,38 @@
+{
+  "name": "nba-stats-wrapper",
+  "version": "1.0.0",
+  "description": "wrapper for nba stats api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config ./webpack.config.js -d --watch",
+    "build": "webpack --config ./webpack.config.js -p",
+    "server": "nodemon ./bundle/server-bundle.js"
+  },
+  "keywords": [
+    "nba"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^0.8.4",
+    "express": "^4.15.2",
+    "nba": "^3.2.6",
+    "prop-types": "^15.5.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.27.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  }
+}
